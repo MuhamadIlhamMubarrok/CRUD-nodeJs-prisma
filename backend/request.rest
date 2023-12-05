@@ -1,0 +1,31 @@
+###
+//getProduct
+GET http://localhost:5000/product
+
+###
+//getProductById
+GET http://localhost:5000/product/6
+
+###
+//createProduct
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "name" : "product 6",
+    "price" : 45454
+}
+
+###
+//updateProduct
+PATCH  http://localhost:5000/product/6
+Content-Type: application/json
+
+{
+    "name" : "product 6 updated",
+    "price" : 100
+}
+
+###
+//deleteProduct
+DELETE  http://localhost:5000/product/1
